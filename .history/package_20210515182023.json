@@ -2,7 +2,7 @@
   "name": "myjslib",
   "version": "1.0.0",
   "description": "",
-  "main": "https://raw.githubusercontent.com/danieltrancozo/MyJSLib/main/dist/index_bundle.js",
+  "main": "dist/index_bundle.js",
   "scripts": {
     "build": "webpack"
   },
