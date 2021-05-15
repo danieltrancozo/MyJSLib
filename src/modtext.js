@@ -1,5 +1,5 @@
 function modtext(variable, value){
     variable.value = value;
-    return (variable);
+    return (variable.value);
 }
 export default modtext;
