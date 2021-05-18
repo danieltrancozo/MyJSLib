@@ -16,6 +16,8 @@ function myMath(selector,string){
         case 5:
             fat(temp);
             break;
+        default:
+            window.alert('Function not found!')
     }
     function res(a){
         a = eval(a);
