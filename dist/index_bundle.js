@@ -176,7 +176,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction myMath(selector, str
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction render(element, classe) {\n  body.innerHTML = body.innerHTML + '<' + element + ' class =\"' + classe + '\"></' + element + '>';\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (render);\n\n//# sourceURL=webpack://$/./src/render.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction render(place, element, classe) {\n  place.innerHTML = place.innerHTML + '<' + element + ' class =\"' + classe + '\"></' + element + '>';\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (render);\n\n//# sourceURL=webpack://$/./src/render.js?");
 
 /***/ }),
 
