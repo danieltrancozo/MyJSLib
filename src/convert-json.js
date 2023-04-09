@@ -9,4 +9,3 @@ function convert(a){
         return (info);
     }
 }
-export default convert;

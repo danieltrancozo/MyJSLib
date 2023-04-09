@@ -51,4 +51,3 @@ function myMath(selector,string){
         return (c-1);
     }
 }
-export default myMath;

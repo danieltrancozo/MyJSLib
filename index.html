@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My JS lib
+        </title>
+        <script src="src/convert-json.js"></script>
+        <script src="src/dpadcontoller.js"></script>
+        <script src="src/getrandomint.js"></script>
+        <script src="src/insertion.js"></script>
+        <script src="src/modtext.js"></script>
+        <script src="src/myMath.js"></script>
+        <script src="src/score.js"></script>
+    </head>
+    <body>
+        <script src="src/render.js">
+            let qs = "body"
+            const home = function() {return (document.querySelector(qs))}
+            let element = "div"
+            let cl = "render_e"
+            let rnd = home()
+            render(rnd,element,cl)
+            qs = "div.render_e"
+            let render_e = home()
+            element = 'h1'
+            cl = 'render_h1'
+            render(render_e,element,cl)
+            qs = "h1.render_h1"
+            let render_h1 = home()
+            render_h1.innerHTML = "Esse é um elemento renderizado por JS através dentro de uma div."
+        </script>
+    </body>
+</html>
