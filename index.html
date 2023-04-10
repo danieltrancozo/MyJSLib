@@ -11,22 +11,17 @@
         <script src="src/modtext.js"></script>
         <script src="src/myMath.js"></script>
         <script src="src/score.js"></script>
+        <script src="src/render.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <script src="src/render.js">
-            let qs = "body"
-            const home = function() {return (document.querySelector(qs))}
-            let element = "div"
-            let cl = "render_e"
-            let rnd = home()
-            render(rnd,element,cl)
-            qs = "div.render_e"
-            let render_e = home()
-            element = 'h1'
-            cl = 'render_h1'
-            render(render_e,element,cl)
-            qs = "h1.render_h1"
-            let render_h1 = home()
+        <script async>
+            const home = function(a) {return (document.querySelector(a))}
+            let rnd = home('body')
+            render(rnd,'div','render_e')
+            let render_e = home("div.render_e")
+            render(render_e,'h1','render_h1')
+            let render_h1 = home("h1.render_h1")
             render_h1.innerHTML = "Esse é um elemento renderizado por JS através dentro de uma div."
         </script>
     </body>
