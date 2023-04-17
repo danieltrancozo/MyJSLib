@@ -2,8 +2,13 @@ body{
     height: 5.2cm;
     width: 6.2cm;
     background-color: gray;
+    align-content: center;
+    justify-content: center;
 }
 table{
+    top: 4mm;
+    left: 4mm;
+    position: absolute;
     border: 3px black solid;
     text-align: center;
 }
