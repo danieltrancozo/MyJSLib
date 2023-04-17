@@ -18,36 +18,35 @@ function myMath(selector,string){
             break;
     }
     function res(a){
-        a = eval(a);
-        return a;
+        a.innerHTML = eval(a.innerHTML);
     }
     function back(a){
-        a = a.substring(0, a.length -1);
-        return(a);
+        a.innerHTML = a.innerHTML.substring(0, a.innerHTML.length -1);
     }
     function root(a){
-        a = Number(eval(a));
-        a = Math.sqrt(a);
-        return (a);
+        a.innerHTML = Number(eval(a.innerHTML));
+        a.innerHTML = Math.sqrt(a.innerHTML);
     }
     function factorial(a){
-        a = Number(eval(a));
-        if (a < 52){
+        a.innerHTML = Number(eval(a.innerHTML));
+        if (a.innerHTML < 52){
             let res = 1;
-            while(a > 1){
-                res *= a;
-                a--;
+            for(i = a.innerHTML; i > 1; i--){
+                res *= i;
             }
-            return (res);
+            a.innerHTML = res;
+        }
+        else {
+            alert('Resultado muito grande para computar aqui!')
         }
     }
     function fat(a){
-        a = Number(eval(a));
+        a.innerHTML = Number(eval(a.innerHTML));
         let c = 1;
-        while(a > 1){
-            a /= c;
+        while(a.innerHTML > 1){
+            a.innerHTML /= c;
             c++;
         }
-        return (c-1);
+        a.innerHTML = c-1;
     }
 }

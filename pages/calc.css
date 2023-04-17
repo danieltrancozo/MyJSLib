@@ -1,0 +1,17 @@
+body{
+    height: 5.2cm;
+    width: 6.2cm;
+    background-color: gray;
+}
+table{
+    border: 3px black solid;
+    text-align: center;
+}
+td{
+    height: 0.9cm;
+    width: 0.9cm;
+    background-color: lightgray;
+}
+.display{
+    column-span: 6;
+}

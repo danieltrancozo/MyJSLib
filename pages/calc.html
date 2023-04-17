@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style></style>
+    <script src="../src/myMath.js"></script>
+    <script src="../src/convert-json.js"></script>
+    <script src="../src/render.js"></script>
+    <link rel="stylesheet" href="calc.css">
+    <script async>
+        function add(a){
+            document.querySelector('td.display').innerHTML+=a
+        }
+        function clean(){
+            document.querySelector('td.display').innerHTML=''
+        }
+        convert('calc.json')
+            .then(data=>data.forEach(element => {
+                render(element)
+            }))
+    </script>
+</head>
+<body>
+</body>
+</html>
